@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block content %}
+<h2>Enter Soil Data</h2>
+<form method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.nitrogen.label }} {{ form.nitrogen(size=32) }}
+        {% for error in form.nitrogen.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.phosphorus.label }} {{ form.phosphorus(size=32) }}
+        {% for error in form.phosphorus.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.potassium.label }} {{ form.potassium(size=32) }}
+        {% for error in form.potassium.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.temperature.label }} {{ form.temperature(size=32) }}
+        {% for error in form.temperature.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.humidity.label }} {{ form.humidity(size=32) }}
+        {% for error in form.humidity.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.ph.label }} {{ form.ph(size=32) }}
+        {% for error in form.ph.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.rainfall.label }} {{ form.rainfall(size=32) }}
+        {% for error in form.rainfall.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>{{ form.submit() }}</div>
+</form>
+{% endblock %}
