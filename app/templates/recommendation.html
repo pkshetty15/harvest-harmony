@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+<h2>Recommended Crops</h2>
+{% if recommended_crops %}
+<ul>
+    {% for crop in recommended_crops %}
+    <li>{{ crop }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No crops recommended based on the provided soil data.</p>
+{% endif %}
+<a href="{{ url_for('index') }}">Enter New Soil Data</a>
+{% endblock %}
