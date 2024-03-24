@@ -2,6 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import FloatField, SubmitField
 from wtforms.validators import DataRequired, NumberRange
 
+
 class SoilDataForm(FlaskForm):
     nitrogen = FloatField('Nitrogen (N)', validators=[DataRequired(), NumberRange(min=0)])
     phosphorus = FloatField('Phosphorus (P)', validators=[DataRequired(), NumberRange(min=0)])
