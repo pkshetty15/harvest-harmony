@@ -4,7 +4,7 @@ Harvest Harmony is a crop recommendation system designed to assist farmers in se
 
 ## Features
 
-- **Soil Data Input**: Farmers can easily input their soil data, including nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall, through a user-friendly form.
+- **Soil Data Input**: Farmers can easily input their soil data, which includes nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall, through a user-friendly form.
 - **Crop Recommendation**: Based on the provided soil data, Harvest Harmony utilizes a machine learning model to recommend a list of crops that are most likely to thrive in the given conditions.
 
 ## Getting Started
@@ -14,7 +14,7 @@ To get started with Harvest Harmony, follow these steps:
 1. Clone the repository: `git clone https://github.com/pkshetty15/harvest-harmony.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Configure the application settings in `config.py`
-4. Run the application: `python run.py`
+4. Run the application: `python run.py` or `flask run`
 5. Access the application in your web browser at `http://localhost:5000`
 
 ## Prerequisites
