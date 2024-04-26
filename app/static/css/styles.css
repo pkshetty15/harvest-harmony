@@ -17,6 +17,12 @@ header {
   align-items: center;
 }
 
+header img {
+  border-radius:10px;
+  width: 60px;
+  margin-block: -20px;
+}
+
 header h1 {
   margin: 0;
   font-size: 2rem;
