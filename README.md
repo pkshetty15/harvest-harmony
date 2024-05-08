@@ -11,11 +11,60 @@ Harvest Harmony is a crop recommendation system designed to assist farmers in se
 
 To get started with Harvest Harmony, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/pkshetty15/harvest-harmony.git`
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Configure the application settings in `config.py`
-4. Run the application: `python run.py` or `flask run`
-5. Access the application in your web browser at `http://localhost:5000`
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/pkshetty15/harvest-harmony.git
+   ```
+
+2. Change working directory:
+
+   ```bash
+   cd harvest-harmony
+   ```
+
+3. [Setup Virtual Environment](https://pkshetty.hashnode.dev/setting-up-virtual-environments-in-python#heading-creating-a-virtual-environment):\*
+
+   ```bash
+   python -m venv .venv
+   ```
+
+4. [Activate the virtual environment](https://pkshetty.hashnode.dev/setting-up-virtual-environments-in-python#heading-activating-the-virtual-environment):\*
+
+   - On Windows:
+
+     ```bash
+     .venv\Scripts\activate
+     ```
+
+   - On macOS and Linux:
+
+     ```bash
+     source .venv/bin/activate
+     ```
+
+5. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. Configure the application settings in `config.py`
+7. Run the application:
+
+   ```bash
+   python run.py
+   ```
+
+   or
+
+   ```bash
+   flask run
+   ```
+
+8. Access the application in your web browser at [http://localhost:5000](http://localhost:5000)
+
+> \* Note: Steps 3 and 4 are optional but recommended to isolate the project dependencies from other Python projects on your system. To know more about virtual environments, refer to this [guide](https://pkshetty.hashnode.dev/setting-up-virtual-environments-in-python).
 
 ## Prerequisites
 
@@ -46,4 +95,3 @@ This project is licensed under the [MIT License](LICENSE).
 - [scikit-learn](https://scikit-learn.org/) - Machine learning library (or any other library used)
 - [matplotlib](https://matplotlib.org/) - Data visualization library
 - [pandas](https://pandas.pydata.org/) - Data manipulation library
-  
