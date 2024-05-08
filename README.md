@@ -1,5 +1,7 @@
 # Harvest Harmony
 
+![Harvest Harmony banner](./app/static/img/harvest-harmony-banner.jpg "banner")
+
 Harvest Harmony is a crop recommendation system designed to assist farmers in selecting the most suitable crops based on their soil data. This application utilizes machine learning techniques to analyze various soil parameters and provide recommendations for crops that are likely to thrive in the given conditions.
 
 ## Features
